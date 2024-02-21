@@ -1,7 +1,16 @@
 package com.hank.kotlin
 
+import java.util.Scanner
+
 fun main() {
-    val stu = Student("Jack",66,88)
+    val scanner = Scanner(System.`in`) //in是關鍵字，需左右加上重音符號「`in`」
+    print("Please enter student's name:")
+    var name:String = scanner.next()
+    print("Please enter student's english:")
+    var english = scanner.nextInt()
+    print("Please enter student's math:")
+    var math = scanner.nextInt()
+    val stu = Student(name,english,math)
     stu.print()
 }
 

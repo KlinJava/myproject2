@@ -6,6 +6,12 @@ import kotlin.contracts.contract
 fun main() {
 //    println("Hello Kotlin!")   //可使用sout+Tab產生
 //    Human().hello()
+    var s:String? = "abcde" //加「?」，表示允許「null」值
+//    s = null
+    println("abcde字串長度: ${s!!.length}")
+    println("取abcde某個字元: ${s?.get(3)}")
+    println("取abcde子字串: ${s?.substring(3)}")
+
     val h = Human("ABC",weight = 66.5f, height = 1.7f)
     h.hello()
     println(h.bmi())

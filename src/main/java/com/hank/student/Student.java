@@ -12,6 +12,24 @@ public class Student {
         this.math = math;
     }
 
+    public int highest(){
+//        直接回傳
+        return (english > math)? english : math;
+//        if三元運算式
+        /*int max = (english > math)? english : math;
+        return max;*/
+
+//        if..else
+        /*int max = 0;
+        if (english > math) {
+            max = english;
+        } else {
+            max = math;
+        }
+        return max;*/
+    }
+
+
     public void print(){
         System.out.println(name + "\t" + english +"\t" + math +
                 "\t" + (english+math)/2);

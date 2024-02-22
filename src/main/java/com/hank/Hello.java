@@ -4,6 +4,13 @@ public class Hello {
 //    main方法產生：手動打全名、指令psvm+Tab 或 main+Tab 產生
     public static void main(String[] args) {
 //        System.out.println("Hello!");
+        String s = "abcde";
+//        String s = null;
+        System.out.println(s.charAt(0));
+        System.out.println("長度:" + s.length());
+        System.out.println("abcde取字串1:" + s.substring(3));
+        System.out.println("abcde取字串2:" + s.substring(1,4));
+
         Person p = new Person("Tom",66.5f,1.7f);
         p.hello();
         System.out.println(p.bmi());

@@ -1,9 +1,13 @@
 package com.hank
 
+import com.hank.kotlin.Student
 import kotlin.contracts.contract
 
 //main方法產生：指令main+Tab
 fun main() {
+    val stu = Student("Hank",50,60)
+    stu.grading()
+
 //    println("Hello Kotlin!")   //可使用sout+Tab產生
 //    Human().hello()
     var s:String? = "abcde" //加「?」，表示允許「null」值

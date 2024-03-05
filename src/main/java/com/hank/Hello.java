@@ -1,8 +1,13 @@
 package com.hank;
 
+//import com.hank.student.Student;
+
+import com.hank.kotlin.Student;
+
 public class Hello {
 //    main方法產生：手動打全名、指令psvm+Tab 或 main+Tab 產生
     public static void main(String[] args) {
+        Student stu = new Student("Hank",50,60);
 //        System.out.println("Hello!");
         String s = "abcde";
 //        String s = null;

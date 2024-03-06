@@ -55,8 +55,9 @@ public class DayOfYear {
             days += day; // days = days + day
 
             //判斷是否為潤年計算方式，如下：
-            if (year % 400 == 0 || (year % 4 == 0 && year != 100)){
+            if (year % 400 == 0 || (year % 4 == 0 && year %100 != 0)){
                 days ++ ; // days = days +1
+                System.out.println("今年(" + year +") 是潤年");
             }
             System.out.println("今天為 " + year + "年的第 " + days); //2月有潤月，可能會少1天
 
